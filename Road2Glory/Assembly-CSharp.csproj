@@ -66,6 +66,7 @@
     <Analyzer Include="C:\Users\eriks\Documents\GitHub\Road2Glory\Road2Glory\Library\PackageCache\com.unity.ai.inference@9a123aee5df7\Runtime\Core\SourceGenerator\SourceGenerators.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\DecisionManager.cs" />
     <Compile Include="Assets\scripts\DatabaseManager.cs" />
   </ItemGroup>
   <ItemGroup>
