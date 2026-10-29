@@ -30,7 +30,7 @@ public class CareerManager : MonoBehaviour
         Debug.Log("Edad: " + jugador.edad);
         Debug.Log("Media: " + jugador.media);
 
-        // Conectar el jugador con el sistema de decisiones
+        // Conectar jugador con DecisionManager
         DecisionManager decisionManager = FindFirstObjectByType<DecisionManager>();
 
         if (decisionManager != null)
@@ -42,10 +42,23 @@ public class CareerManager : MonoBehaviour
         {
             Debug.LogWarning("No se encontró ningún DecisionManager en la escena.");
         }
-        
+
+        // Generar ofertas iniciales
+        OfferManager offerManager = FindFirstObjectByType<OfferManager>();
+
+        if (offerManager != null)
+        {
+            offerManager.GenerarOfertasIniciales();
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró ningún OfferManager en la escena.");
+        }
     }
+
     private void Start()
-{
-    CrearJugador("Jugador Prueba", "DC", 18);
-}
+    {
+        // PRUEBA TEMPORAL
+        CrearJugador("Jugador Prueba", "DC", 18);
+    }
 }

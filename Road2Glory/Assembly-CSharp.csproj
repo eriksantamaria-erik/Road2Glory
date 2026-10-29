@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\DecisionManager.cs" />
+    <Compile Include="Assets\scripts\ofertasmanager.cs" />
     <Compile Include="Assets\scripts\DatabaseManager.cs" />
     <Compile Include="Assets\scripts\CareerManager.cs" />
     <Compile Include="Assets\scripts\PlayerData.cs" />
